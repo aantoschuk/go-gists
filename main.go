@@ -1,14 +1,7 @@
 package main
 
-import (
-	"fmt"
-
-	doublyLinkedList "github.com/aantoschuk/go-gists/structures/linkedList/doubly"
-)
+import "github.com/aantoschuk/go-gists/patterns/concurrency"
 
 func main() {
-	fmt.Println("start")
-	list := doublyLinkedList.NewDoublyLinkedList[int]()
-	list.Add(1)
-	fmt.Println(list)
+	concurrency.PatternGenerator()
 }
